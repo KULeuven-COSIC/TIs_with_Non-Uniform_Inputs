@@ -1,0 +1,249 @@
+max_no_of_threads   % maximum number of threads *for parallel operation*
+48
+
+no_of_groups % number of groups to conduct the test, e.g., fixed vs. fixed, fixed vs. random, etc.
+2
+
+64'h$$$$$$$$$$$$$$$$
+64'h42c20fd3b586879e
+
+clock_signal_name    % name of the clock signal
+clk
+
+max_clock_cycle   % maximum number of clock cycles per run before checking the end_condition
+8
+
+no_of_always_random_inputs % number of inputs which are fed randomly at every clock cycle  
+0   
+
+no_of_initial_inputs   % number of primary inputs during the initialization
+6
+
+no_of_initial_clock_cycles   % number of clock cycles to initiate the run (start of encryption)
+4
+
+[63:0] plaintext_rand_1 group_in0[63:0]
+[63:0] plaintext_rand_2 group_in1[63:0]
+[63:0] plaintext_rand_3 group_in2[63:0]
+[127:0] key 128'h687ded3b3c85b3f35b1009863e2a8cbf
+reset   1'b1
+start   1'b0
+
+[63:0] plaintext_rand_1 group_in0[63:0]
+[63:0] plaintext_rand_2 group_in1[63:0]
+[63:0] plaintext_rand_3 group_in2[63:0]
+[127:0] key 128'h687ded3b3c85b3f35b1009863e2a8cbf
+reset   1'b0
+start   1'b0
+
+[63:0] plaintext_rand_1 group_in0[63:0]
+[63:0] plaintext_rand_2 group_in1[63:0]
+[63:0] plaintext_rand_3 group_in2[63:0]
+[127:0] key 128'h687ded3b3c85b3f35b1009863e2a8cbf
+reset   1'b0
+start   1'b1
+
+[63:0] plaintext_rand_1 64'h0000000000000000
+[63:0] plaintext_rand_2 64'h0000000000000000
+[63:0] plaintext_rand_3 64'h0000000000000000
+[127:0] key 128'h687ded3b3c85b3f35b1009863e2a8cbf
+reset   1'b0
+start   1'b0
+
+end_condition    % the condition to check to terminate the simulation (e.g., done signal is high)
+                 % or a numer of clock cycles, e.g., ClockCycles 5
+ClockCycles 8
+
+end_wait_cycles   % number of clock cycles to wait after the end_condition 
+0
+
+order_of_test % maximum number of probes, i.e., order of test
+1
+
+multivariate_test % no: only univariate test should be done, yes: univariate + multivariate
+no
+
+transitional_leakage % yes/no: whether transitional leakage should be considered in the tests
+no
+
+compact_distributions % yes/no: whether distributions (of probes) should be considered as compact. 
+                      % it is recommended to use 'no' only for small circuits and low security orders
+no
+
+minimize_probe_sets   % yes/no: whether it should be tried to find equivalent probing sets.
+                      % it is recommended to use 'yes' only for small circuits and low security orders
+yes
+
+no_of_test_clock_cycles % number of blocks to define clock cycles which should be covered in the tests
+1
+
+3-8      % clock cycles 4, 5, 6
+
+no_of_simulations % total number of simulations (traces) in the tests, should be a factor of 64
+10112000
+
+no_of_step_simulations % number of simulations in each step, should be a factor of 64, and a divisor of no_of_simulations
+128000
+
+no_of_step_write_results % number of simulations in each step that result files are written, 
+                         % should be a factor of 64, and a divisor of no_of_simulations and
+                         % should be a factor of no_of_step_simulations
+128000
+
+no_of_entries_in_report
+500
+
+probes_include   % those wires which should be included for probing (all : to include them all, 0 : to include none, e.g., 2 : to inlcude two and name them)  
+all
+
+probes_exclude   % those wires which should be exclused for probing (all : to exclude them all, 0 : to exclude none, e.g., 2 : to exclude two and name them) 
+136
+
+_00000_
+_00001_
+_00002_
+_00003_
+_00004_
+_00005_
+_00006_
+_00007_
+_00008_
+_00009_
+_00010_
+_00011_
+_00012_
+_00013_
+_00014_
+_00015_
+_00016_
+_00017_
+_00018_
+_00019_
+_00020_
+_00021_
+_00022_
+_00023_
+_00024_
+_00025_
+_00026_
+_00027_
+_00028_
+_00029_
+_00030_
+_00031_
+_00032_
+_00033_
+_00034_
+_00035_
+_00036_
+_00037_
+_00038_
+_00039_
+_00040_
+_00041_
+_00042_
+_00043_
+_00044_
+_00045_
+_00046_
+_00047_
+_00048_
+_00049_
+_00050_
+_00051_
+_00052_
+_00053_
+_00054_
+_00055_
+_00056_
+_00057_
+_00058_
+_00059_
+_00060_
+_00061_
+_00062_
+_00063_
+_00064_
+_00065_
+_00066_
+_00067_
+_00068_
+_00069_
+_00070_
+_00071_
+_00072_
+_00073_
+_00074_
+_00075_
+_00076_
+_00077_
+_00078_
+_00079_
+_00080_
+_00081_
+_00082_
+_00083_
+_00084_
+_00085_
+_00086_
+_00087_
+_00088_
+_00089_
+_00090_
+_00091_
+_00092_
+_00093_
+_00094_
+_00095_
+_00096_
+_00097_
+_00098_
+_00099_
+_00100_
+_00101_
+_00102_
+_00103_
+_00104_
+_00105_
+_00106_
+_00107_
+_00108_
+_00109_
+_00110_
+_00111_
+_00112_
+_00113_
+_00114_
+_00115_
+_00116_
+_00117_
+_00118_
+_00119_
+_00120_
+_00121_
+_00122_
+_00123_
+\midori_init_rand.group_in0*
+\midori_init_rand.group_in1*
+\midori_init_rand.group_in2*
+\midori_init_rand.group_in_design0*
+\midori_init_rand.group_in_design1*
+\midori_init_rand.group_in_design2*
+plain_to_cipher_1*
+plain_to_cipher_2*
+plain_to_cipher_3*
+plaintext_rand_1*
+plaintext_rand_2*
+plaintext_rand_3*
+
+%no_of_outputs
+%3
+
+%[63:0] ciphertext_1
+%[63:0] ciphertext_2
+%[63:0] ciphertext_3
+
+%expected_output
+
+%64'h$$$$$$$$$$$$$$$$
+%64'h66bcdc6270d901cd

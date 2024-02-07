@@ -1,0 +1,8 @@
+@misc{cryptoeprint:2023/1517,
+      author = {Siemen Dhooghe and Artemii Ovchinnikov},
+      title = {Threshold Implementations with Non-Uniform Inputs},
+      howpublished = {Cryptology ePrint Archive, Paper 2023/1517},
+      year = {2023},
+      note = {\url{https://eprint.iacr.org/2023/1517}},
+      url = {https://eprint.iacr.org/2023/1517}
+}
