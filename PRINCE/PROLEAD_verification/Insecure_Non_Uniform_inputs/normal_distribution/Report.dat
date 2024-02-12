@@ -1,0 +1,62 @@
+Start Hardware Leakage Evaluation
+
+Library file:   ../../../../../library.lib
+Library name:   custom
+Design file:    design.v
+Module name:    midori_initrand_wrap
+Linker file:    linker.ld
+Settings file:  config.set
+Result folder:  .
+
+Read library file...done!
+Read design file..."midori_initrand_wrap"...done!
+Make circuit depth...done!
+Read settings file...done with 5 warnings!
+    Warning "remove_full_probing_sets" is not specified. Default "remove_full_probing_sets" = no is taken!
+    Warning "max_distance_multivariate" is not specified. Default "max_distance_multivariate" = 10 is taken!
+    Warning "no_of_probing_sets_per_step" is not specified. Default "no_of_probing_sets_per_step" = all is taken!
+    Warning "effect_size" is not specified. Default "effect_size" = 0.1 is taken!
+    Warning "no_of_outputs" is not specified. Default "no_of_outputs" = 0 is taken!
+Construct probes...done!
+Prepare simulation memory...done!
+Prepare shared data for 48 threads ...done!
+
+Generate list of standard probes from 1080 standard probe locations...10800 standard probes found...done!
+Generate list of extended probes from 728 extended probe locations...130870 extended probes found...done!
+Generate univariate probing sets...done (last step)! 10800 probing sets generated!
+Extend all probing sets...done!
+Remove duplicated probes in the sets...done!
+Remove duplicated probing sets...done! 8880 probing sets remain!
+Remove subsets of probing sets...Setting univariate case...done! 3620 probing sets remain!
+----------------------------------------------------------------------------------------------------------------------------------
+| #Standard Probes | #Extended Probes | Security Order | Distance | #Entries in Report | #Probing Sets | Maximum #Probes per Set |
+----------------------------------------------------------------------------------------------------------------------------------
+|            10800 |             7280 |              1 |       10 |                500 |          3620 |                      32 |
+----------------------------------------------------------------------------------------------------------------------------------
+
+Evaluate security under the robust probing model!
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|      Elapsed Time |      Required Ram |  Processed Simulations |                              Probing Set with highest Information Leakage |  -log10(p) |  Status |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|        34.767184s |        8.247096GB |        128000 / 438057 |                                                           _00208_[63] (5) |        inf | LEAKAGE |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|        76.493738s |       12.375864GB |        256000 / 615363 |                                                           _00208_[63] (5) |        inf | LEAKAGE |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       119.695930s |       16.832568GB |        384000 / 750641 |                                                           _00208_[63] (5) |        inf | LEAKAGE |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       164.677741s |       19.691688GB |        512000 / 864015 |                                                           _00208_[63] (5) |        inf | LEAKAGE |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       210.497562s |       26.711028GB |        640000 / 963333 |                                                           _00208_[63] (5) |        inf | LEAKAGE |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       256.790220s |       27.994128GB |       768000 / 1052533 |                                                           _00208_[63] (5) |        inf | LEAKAGE |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       304.602518s |       29.621120GB |       896000 / 1134201 |                                                           _00208_[63] (5) |        inf | LEAKAGE |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       354.135230s |       32.083504GB |      1024000 / 1209711 |                                                           _00208_[63] (5) |        inf | LEAKAGE |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       405.058971s |       43.351624GB |      1152000 / 1280271 |                                                           _00208_[63] (5) |        inf | LEAKAGE |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|       457.337397s |       45.700908GB |      1280000 / 1346575 |                                                           _00208_[63] (5) |        inf | LEAKAGE |
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Evaluation done in 538.633 seconds!
+done!
